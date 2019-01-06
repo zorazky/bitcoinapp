@@ -1,107 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
-
-/***/ "./componentes/Evento.js":
-/*!*******************************!*\
-  !*** ./componentes/Evento.js ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/hacknew/version-control/react/react10Projects/bitcoinapp/componentes/Evento.js";
-
-
-var Evento = function Evento(props) {
-  var _props$info = props.info,
-      name = _props$info.name,
-      url = _props$info.url,
-      description = _props$info.description;
-  var titulo = name.text;
-
-  if (titulo.length > 150) {
-    titulo - titulo.substr(0, 150);
-  }
-
-  var desc = description.text;
-
-  if (desc) {
-    desc = desc.substr(0, 250);
-  }
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: url,
-    target: "_blank",
-    className: "list-group-item active text-light mb-1",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "mb-3",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, titulo), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "mb-1",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, desc));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Evento);
-
-/***/ }),
-
-/***/ "./componentes/Eventos.js":
-/*!********************************!*\
-  !*** ./componentes/Eventos.js ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Evento__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Evento */ "./componentes/Evento.js");
-var _jsxFileName = "/Users/hacknew/version-control/react/react10Projects/bitcoinapp/componentes/Eventos.js";
-
-
-
-var Eventos = function Eventos(props) {
-  var eventosId = Object.keys(props.eventos);
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "list-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, eventosId.map(function (key) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Evento__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      key: key,
-      info: props.eventos[key],
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
-    });
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Eventos);
-
-/***/ }),
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/nosotros.js"],{
 
 /***/ "./componentes/Master.js":
 /*!*******************************!*\
@@ -283,261 +180,6 @@ var Navegacion = function Navegacion() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Navegacion);
-
-/***/ }),
-
-/***/ "./componentes/Noticia.js":
-/*!********************************!*\
-  !*** ./componentes/Noticia.js ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/hacknew/version-control/react/react10Projects/bitcoinapp/componentes/Noticia.js";
-
-
-var Noticia = function Noticia(props) {
-  var _props$noticia = props.noticia,
-      urlToImage = _props$noticia.urlToImage,
-      url = _props$noticia.url,
-      title = _props$noticia.title,
-      description = _props$noticia.description,
-      source = _props$noticia.source;
-  var imagen;
-
-  if (urlToImage !== '') {
-    imagen = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-      src: urlToImage,
-      alt: title,
-      className: "card-img-top",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
-      },
-      __self: this
-    });
-  } else {
-    imagen = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-      className: "text-center my-5",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }, "Imagen No Disponible");
-  }
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-md-6 col-12 mb-4",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card-image",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, imagen), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card-body",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "card-title",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "card-text",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }, description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "card-text",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, source.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "{url}",
-    target: "_blank",
-    className: "btn btn-primary d-block",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }, "Leer Noticia"))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Noticia);
-
-/***/ }),
-
-/***/ "./componentes/Noticias.js":
-/*!*********************************!*\
-  !*** ./componentes/Noticias.js ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Noticia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Noticia */ "./componentes/Noticia.js");
-var _jsxFileName = "/Users/hacknew/version-control/react/react10Projects/bitcoinapp/componentes/Noticias.js";
-
-
-
-var Noticias = function Noticias(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, props.noticias.map(function (noticia) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Noticia__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      key: noticia.url,
-      noticia: noticia,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 7
-      },
-      __self: this
-    });
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Noticias);
-
-/***/ }),
-
-/***/ "./componentes/Precio.js":
-/*!*******************************!*\
-  !*** ./componentes/Precio.js ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/hacknew/version-control/react/react10Projects/bitcoinapp/componentes/Precio.js";
-
-
-var Precio = function Precio(props) {
-  var _props$precio = props.precio,
-      price = _props$precio.price,
-      percent_change_1h = _props$precio.percent_change_1h,
-      percent_change_7d = _props$precio.percent_change_7d,
-      percent_change_24h = _props$precio.percent_change_24h;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card text-white bg-success mb-3",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card-header",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, "Precio del Bitcoin"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "card-body",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
-    className: "card-title",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, "Precio Actual: $", price), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "d-md-flex justify-content-between",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "card-text",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "font-weight-bold",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, "\xDAltima Hora: "), percent_change_1h, "%"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "card-text",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "font-weight-bold",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, "\xDAltimas 24 horas: "), percent_change_24h, "%"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "card-text",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "font-weight-bold",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, "\xDAltimos 7 D\xEDas: "), percent_change_7d, "%"))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Precio);
 
 /***/ }),
 
@@ -1325,18 +967,6 @@ module.exports = _typeof;
 /*!******************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/regenerator/index.js ***!
   \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime-module.js");
-
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/regenerator/index.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
-  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5345,33 +4975,6 @@ function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
 }
 
 module.exports = hoistNonReactStatics;
-
-
-/***/ }),
-
-/***/ "./node_modules/isomorphic-unfetch/browser.js":
-/*!****************************************************!*\
-  !*** ./node_modules/isomorphic-unfetch/browser.js ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = window.fetch || (window.fetch = __webpack_require__(/*! unfetch */ "./node_modules/isomorphic-unfetch/node_modules/unfetch/dist/unfetch.mjs").default || __webpack_require__(/*! unfetch */ "./node_modules/isomorphic-unfetch/node_modules/unfetch/dist/unfetch.mjs"));
-
-
-/***/ }),
-
-/***/ "./node_modules/isomorphic-unfetch/node_modules/unfetch/dist/unfetch.mjs":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/isomorphic-unfetch/node_modules/unfetch/dist/unfetch.mjs ***!
-  \*******************************************************************************/
-/*! exports provided: default */
-/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (function(e,n){return n=n||{},new Promise(function(t,r){var s=new XMLHttpRequest;for(var o in s.open(n.method||"get",e,!0),n.headers)s.setRequestHeader(o,n.headers[o]);function u(){var e,n=[],t=[],r={};return s.getAllResponseHeaders().replace(/^(.*?):[^\S\n]*([\s\S]*?)$/gm,function(s,o,u){n.push(o=o.toLowerCase()),t.push([o,u]),r[o]=(e=r[o])?e+","+u:u}),{ok:2==(s.status/100|0),status:s.status,statusText:s.statusText,url:s.responseURL,clone:u,text:function(){return Promise.resolve(s.responseText)},json:function(){return Promise.resolve(s.responseText).then(JSON.parse)},blob:function(){return Promise.resolve(new Blob([s.response]))},headers:{keys:function(){return n},entries:function(){return t},get:function(e){return r[e.toLowerCase()]},has:function(e){return e.toLowerCase()in r}}}}s.withCredentials="include"==n.credentials,s.onload=function(){t(u())},s.onerror=r,s.send(n.body||null)})});;
-//# sourceMappingURL=unfetch.mjs.map
 
 
 /***/ }),
@@ -10931,170 +10534,52 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/nosotros.js":
+/*!***************************!*\
+  !*** ./pages/nosotros.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _componentes_Master__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../componentes/Master */ "./componentes/Master.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _componentes_Precio__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../componentes/Precio */ "./componentes/Precio.js");
-/* harmony import */ var _componentes_Noticias__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../componentes/Noticias */ "./componentes/Noticias.js");
-/* harmony import */ var _componentes_Eventos__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../componentes/Eventos */ "./componentes/Eventos.js");
-
-var _jsxFileName = "/Users/hacknew/version-control/react/react10Projects/bitcoinapp/pages/index.js";
-
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _componentes_Master__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../componentes/Master */ "./componentes/Master.js");
+var _jsxFileName = "/Users/hacknew/version-control/react/react10Projects/bitcoinapp/pages/nosotros.js";
 
 
 
-
-
-
-
-var Index = function Index(props) {
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_componentes_Master__WEBPACK_IMPORTED_MODULE_2__["default"], {
+var Nosotros = function Nosotros() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_componentes_Master__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 4
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "row",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 5
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-12",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "text-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 6
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+  }, "Sobre Nosotros"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 7
     },
     __self: this
-  }, "Precio del bitcoin"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_componentes_Precio__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    precio: props.precioBitcoin,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-md-8",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, "Noticias sobre el Bitcoin"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_componentes_Noticias__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    noticias: props.noticias,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "col-md-4",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, "Pr\xF3ximos Eventos Bitcoin"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_componentes_Eventos__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    eventos: props.eventos,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }))));
+  }, "Hola desde nosotros")));
 };
 
-Index.getInitialProps =
-/*#__PURE__*/
-_asyncToGenerator(
-/*#__PURE__*/
-_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-  var precio, noticias, eventos, resPrecio, resNoticias, resEventos;
-  return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-    while (1) {
-      switch (_context.prev = _context.next) {
-        case 0:
-          _context.next = 2;
-          return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()('https://api.coinmarketcap.com/v2/ticker/1/');
-
-        case 2:
-          precio = _context.sent;
-          _context.next = 5;
-          return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()('https://newsapi.org/v2/everything?q=bitcoin&sortBy=publishedAt&apiKey=d539c47efc784013a19afeb5a34ab049&language=es');
-
-        case 5:
-          noticias = _context.sent;
-          _context.next = 8;
-          return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()('https://www.eventbriteapi.com/v3/events/search/?q=Bitcoin&sort_by=date&location.address=Mexico&token=FCNSHJ7RZAMWESN4UMNE');
-
-        case 8:
-          eventos = _context.sent;
-          _context.next = 11;
-          return precio.json();
-
-        case 11:
-          resPrecio = _context.sent;
-          _context.next = 14;
-          return noticias.json();
-
-        case 14:
-          resNoticias = _context.sent;
-          _context.next = 17;
-          return eventos.json();
-
-        case 17:
-          resEventos = _context.sent;
-          return _context.abrupt("return", {
-            precioBitcoin: resPrecio.data.quotes.USD,
-            noticias: resNoticias.articles,
-            eventos: resEventos.events
-          });
-
-        case 19:
-        case "end":
-          return _context.stop();
-      }
-    }
-  }, _callee, this);
-}));
-/* harmony default export */ __webpack_exports__["default"] = (Index);
+/* harmony default export */ __webpack_exports__["default"] = (Nosotros);
     (function (Component, route) {
       if(!Component) return
       if (false) {}
@@ -11111,21 +10596,21 @@ _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function 
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/nosotros")
   
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
-/***/ 3:
-/*!******************************!*\
-  !*** multi ./pages/index.js ***!
-  \******************************/
+/***/ 4:
+/*!*********************************!*\
+  !*** multi ./pages/nosotros.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__NEXT_REGISTER_PAGE('/', function() {
-module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
+__NEXT_REGISTER_PAGE('/nosotros', function() {
+module.exports = __webpack_require__(/*! ./pages/nosotros.js */"./pages/nosotros.js");
 
 return { page: module.exports.default }});
 
@@ -11142,5 +10627,5 @@ module.exports = dll_831a3634f66cb1dada0c;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
-//# sourceMappingURL=index.js.map
+},[[4,"static/runtime/webpack.js"]]]));;
+//# sourceMappingURL=nosotros.js.map
